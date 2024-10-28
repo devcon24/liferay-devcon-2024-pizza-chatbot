@@ -1,0 +1,8 @@
+apiDir: "../chatbot-api/src/main/java"
+apiPackagePath: "com.liferay.chatbot"
+application:
+    baseURI: "/chatbot"
+    className: "ChatbotApplication"
+    name: "Chatbot"
+author: "Alejandro Tardín"
+generateGraphQL: false

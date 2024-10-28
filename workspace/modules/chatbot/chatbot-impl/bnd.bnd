@@ -1,0 +1,3 @@
+Bundle-Name: Liferay Chatbot Implementation
+Bundle-SymbolicName: com.liferay.chatbot.impl
+Bundle-Version: 1.0.0

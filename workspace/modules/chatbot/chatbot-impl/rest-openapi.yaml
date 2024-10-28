@@ -1,0 +1,78 @@
+components:
+    schemas:
+        ChatbotRequest:
+            properties:
+                messages:
+                    description:
+                        "The conversation history"
+                    items:
+                        $ref: "#/components/schemas/Message"
+                    type: array
+                openAPIURL:
+                    description:
+                        "The OpenAPI URL for Chatbot tools."
+                    type: string
+            required:
+                - messages
+                - openAPIURL
+            type: object
+        ChatbotResponse:
+            properties:
+                content:
+                    description:
+                        "The chatbot response"
+                    type: string
+            type: object
+        Message:
+            properties:
+                content:
+                    type: string
+                source:
+                    enum:
+                        - USER
+                        - SYSTEM
+                    type: string
+            type: object
+info:
+    description:
+        "Chatbot REST API"
+    license:
+        name: "Apache 2.0"
+        url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+    title: "Chatbot"
+    version: v1.0
+openapi: 3.0.1
+paths:
+    /chat:
+        post:
+            description:
+                "Send a text message to Chatbot and receive a response."
+            operationId: "chat"
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            $ref: "#/components/schemas/ChatbotRequest"
+                    application/xml:
+                        schema:
+                            $ref: "#/components/schemas/ChatbotRequest"
+                description:
+                    "Input payload for Chatbot request."
+                required: true
+            responses:
+                "200":
+                    content:
+                        application/json:
+                            schema:
+                                $ref: "#/components/schemas/ChatbotResponse"
+                        application/xml:
+                            schema:
+                                $ref: "#/components/schemas/ChatbotResponse"
+                "400":
+                    description:
+                        "Bad request. Message text is missing or invalid."
+                "500":
+                    description:
+                        "Internal server error."
+            summary: "Send a message to Chatbot"
+            tags: ["Chatbot"]

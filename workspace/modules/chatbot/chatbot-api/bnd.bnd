@@ -1,0 +1,6 @@
+Bundle-Name: Liferay Chatbot API
+Bundle-SymbolicName: com.liferay.chatbot.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.liferay.chatbot.dto.v1_0,\
+	com.liferay.chatbot.resource.v1_0

@@ -1,0 +1,7 @@
+dependencies {
+	api project(":modules:chatbot:chatbot-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.portal.api"
+}
+
+group = "chatbot"
