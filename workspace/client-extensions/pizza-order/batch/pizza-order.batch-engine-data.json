@@ -1,0 +1,249 @@
+{
+	"configuration": {
+		"className": "com.liferay.object.admin.rest.dto.v1_0.ObjectDefinition",
+		"multiCompany": true,
+		"parameters": {
+			"containsHeaders": "true",
+			"createStrategy": "UPSERT",
+			"importStrategy": "ON_ERROR_FAIL",
+			"updateStrategy": "UPDATE"
+		},
+		"taskItemDelegateName": "DEFAULT"
+	},
+	"items": [
+		{
+			"accountEntryRestricted": false,
+			"accountEntryRestrictedObjectFieldName": "",
+			"actions": {
+				"delete": {
+				},
+				"exportObjectDefinition": {
+				},
+				"get": {
+				},
+				"permissions": {
+				},
+				"update": {
+				}
+			},
+			"active": true,
+			"defaultLanguageId": "en_US",
+			"enableCategorization": true,
+			"enableComments": false,
+			"enableIndexSearch": true,
+			"enableLocalization": false,
+			"enableObjectEntryDraft": false,
+			"enableObjectEntryHistory": false,
+			"externalReferenceCode": "99d0bff7-a3f5-1fbc-e0b7-1d8b5f808be1",
+			"label": {
+				"en_US": "Pizza Order"
+			},
+			"modifiable": true,
+			"name": "PizzaOrder",
+			"objectActions": [
+			],
+			"objectFields": [
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"externalReferenceCode": "e5cb2a9d-470d-225d-0479-fe7844778df0",
+					"indexed": false,
+					"indexedAsKeyword": false,
+					"indexedLanguageId": "",
+					"label": {
+						"en_US": "Author"
+					},
+					"localized": false,
+					"name": "creator",
+					"objectFieldSettings": [
+					],
+					"readOnly": "true",
+					"readOnlyConditionExpression": "",
+					"required": false,
+					"state": false,
+					"system": true,
+					"type": "String",
+					"unique": false
+				},
+				{
+					"DBType": "Date",
+					"businessType": "Date",
+					"externalReferenceCode": "f781cc4e-2fc2-9a77-0b5f-152e0fe69ed5",
+					"indexed": false,
+					"indexedAsKeyword": false,
+					"indexedLanguageId": "",
+					"label": {
+						"en_US": "Create Date"
+					},
+					"localized": false,
+					"name": "createDate",
+					"objectFieldSettings": [
+					],
+					"readOnly": "true",
+					"readOnlyConditionExpression": "",
+					"required": false,
+					"state": false,
+					"system": true,
+					"type": "Date",
+					"unique": false
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"externalReferenceCode": "432f6019-b4b6-0e40-cdf8-9284ba4a18e0",
+					"indexed": false,
+					"indexedAsKeyword": false,
+					"indexedLanguageId": "",
+					"label": {
+						"en_US": "External Reference Code"
+					},
+					"localized": false,
+					"name": "externalReferenceCode",
+					"objectFieldSettings": [
+					],
+					"readOnly": "false",
+					"readOnlyConditionExpression": "",
+					"required": false,
+					"state": false,
+					"system": true,
+					"type": "String",
+					"unique": false
+				},
+				{
+					"DBType": "Long",
+					"businessType": "LongInteger",
+					"externalReferenceCode": "788304f6-9fa7-ca98-667e-d131273be5ef",
+					"indexed": true,
+					"indexedAsKeyword": true,
+					"indexedLanguageId": "",
+					"label": {
+						"en_US": "ID"
+					},
+					"localized": false,
+					"name": "id",
+					"objectFieldSettings": [
+					],
+					"readOnly": "true",
+					"readOnlyConditionExpression": "",
+					"required": false,
+					"state": false,
+					"system": true,
+					"type": "Long",
+					"unique": false
+				},
+				{
+					"DBType": "Date",
+					"businessType": "Date",
+					"externalReferenceCode": "3d75f51d-0a8c-321f-1147-8302622e0631",
+					"indexed": false,
+					"indexedAsKeyword": false,
+					"indexedLanguageId": "",
+					"label": {
+						"en_US": "Modified Date"
+					},
+					"localized": false,
+					"name": "modifiedDate",
+					"objectFieldSettings": [
+					],
+					"readOnly": "true",
+					"readOnlyConditionExpression": "",
+					"required": false,
+					"state": false,
+					"system": true,
+					"type": "Date",
+					"unique": false
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"externalReferenceCode": "2fbba88f-0015-75b2-d50a-db5e120efec4",
+					"indexed": false,
+					"indexedAsKeyword": false,
+					"indexedLanguageId": "",
+					"label": {
+						"en_US": "Status"
+					},
+					"localized": false,
+					"name": "status",
+					"objectFieldSettings": [
+					],
+					"readOnly": "true",
+					"readOnlyConditionExpression": "",
+					"required": false,
+					"state": false,
+					"system": true,
+					"type": "String",
+					"unique": false
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"externalReferenceCode": "85c70688-decb-a379-3817-0b4020338001",
+					"indexed": true,
+					"indexedAsKeyword": false,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Ingredients"
+					},
+					"localized": false,
+					"name": "ingredients",
+					"objectFieldSettings": [
+					],
+					"readOnly": "false",
+					"readOnlyConditionExpression": "",
+					"required": true,
+					"state": false,
+					"system": false,
+					"type": "String",
+					"unique": false
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"externalReferenceCode": "93fd7c79-1f60-d2cb-415d-0209a16d35d1",
+					"indexed": true,
+					"indexedAsKeyword": false,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Address"
+					},
+					"localized": false,
+					"name": "address",
+					"objectFieldSettings": [
+					],
+					"readOnly": "false",
+					"readOnlyConditionExpression": "",
+					"required": true,
+					"state": false,
+					"system": false,
+					"type": "String",
+					"unique": false
+				}
+			],
+			"objectFolderExternalReferenceCode": "default",
+			"objectLayouts": [
+			],
+			"objectRelationships": [
+			],
+			"objectValidationRules": [
+			],
+			"objectViews": [
+			],
+			"panelCategoryKey": "control_panel.object",
+			"parameterRequired": false,
+			"pluralLabel": {
+				"en_US": "Pizza Orders"
+			},
+			"portlet": true,
+			"restContextPath": "/o/c/pizzaorders",
+			"scope": "company",
+			"status": {
+				"code": 0,
+				"label": "approved",
+				"label_i18n": "Approved"
+			},
+			"system": false,
+			"titleObjectFieldName": "id"
+		}
+	]
+}
