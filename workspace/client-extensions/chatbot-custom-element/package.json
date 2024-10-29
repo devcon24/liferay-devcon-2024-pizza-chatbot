@@ -1,0 +1,20 @@
+{
+	"devDependencies": {
+		"@babel/core": "^7.26.0",
+		"@babel/preset-env": "^7.26.0",
+		"@babel/preset-react": "^7.25.9",
+		"@clayui/button": "^3.116.0",
+		"@clayui/card": "^3.121.0",
+		"@clayui/form": "^3.119.0",
+		"@clayui/loading-indicator": "^3.111.0",
+		"babel-loader": "^9.2.1",
+		"webpack": "5.90.1",
+		"webpack-cli": "5.1.4"
+	},
+	"name": "@liferay/chatbot-custom-element",
+	"private": true,
+	"scripts": {
+		"build": "webpack"
+	},
+	"version": "1.0.0"
+}

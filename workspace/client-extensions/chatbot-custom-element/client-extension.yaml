@@ -1,0 +1,13 @@
+assemble:
+    - from: build/static
+      into: static
+chatbot-custom-element:
+    friendlyURLMapping: chatbot-custom-element
+    htmlElementName: chatbot-custom-element
+    instanceable: false
+    name: Chatbot Custom Element
+    portletCategoryName: category.client-extensions
+    type: customElement
+    urls:
+        - index.*.js
+    useESM: true
